@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://beacal6fqj2um"]
+
+[ext_resource type="Theme" uid="uid://d0jgfias2pq1l" path="res://Scenes/lighttheme.tres" id="1_nlp2w"]
+[ext_resource type="Script" uid="uid://ja5g3hobvwfi" path="res://Scenes/functions.gd" id="2_tn3rs"]
+
+[node name="Functions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_nlp2w")
+script = ExtResource("2_tn3rs")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/MarginContainer" groups=["Persistence"]]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/PanelContainer/GridContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/PanelContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Type Here"
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
+[connection signal="pressed" from="VBoxContainer/PanelContainer/GridContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="text_changed" from="VBoxContainer/PanelContainer/GridContainer/LineEdit" to="." method="_on_line_edit_text_changed"]

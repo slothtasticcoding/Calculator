@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Calculator"
+run/main_scene="uid://dqs2026dlqvgc"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,3 +23,7 @@ window/size/viewport_height=1280
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="mobile"

@@ -1,0 +1,98 @@
+[gd_resource type="Theme" load_steps=13 format=3 uid="uid://d0jgfias2pq1l"]
+
+[ext_resource type="FontFile" uid="uid://cl51qhauypc2m" path="res://images/fonts/Kenney Future Narrow.ttf" id="1_pasw8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pasw8"]
+bg_color = Color(0.6931681, 0.91567945, 0.99999994, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0uexp"]
+bg_color = Color(0.73707396, 0.80960274, 0.89356333, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qq2lr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qq2lr"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(2.1658839e-06, 0.39325005, 0.53242505, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kuxg5"]
+bg_color = Color(2.1658839e-06, 0.4218689, 0.57815415, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_anqyr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_anqyr"]
+bg_color = Color(0.47564405, 0.6356611, 0.67474025, 1)
+
+[sub_resource type="Gradient" id="Gradient_6u7nk"]
+colors = PackedColorArray(0.7294118, 0.827451, 0.87058824, 1, 0.9019608, 0.9254902, 0.9411765, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pasw8"]
+gradient = SubResource("Gradient_6u7nk")
+fill_from = Vector2(0.74643874, 0.5925926)
+fill_to = Vector2(0.9088319, 0.042735044)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0uexp"]
+texture = SubResource("GradientTexture2D_pasw8")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ogb46"]
+bg_color = Color(0.9411765, 0.95686275, 0.96862745, 1)
+shadow_color = Color(0, 0, 0, 0.039215688)
+shadow_size = 15
+
+[resource]
+Button/colors/font_color = Color(3.1886623e-07, 0.1981593, 0.18171969, 1)
+Button/colors/font_hover_color = Color(0, 0.2, 0.18039216, 1)
+Button/colors/icon_focus_color = Color(0.04155597, 0.2557136, 0.31553334, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_pasw8")
+Button/styles/focus = SubResource("StyleBoxFlat_pasw8")
+Button/styles/hover = SubResource("StyleBoxFlat_0uexp")
+Button/styles/normal = SubResource("StyleBoxEmpty_qq2lr")
+Function_button/base_type = &"Button"
+Function_button/colors/font_color = Color(0, 0, 0, 1)
+Function_button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Function_button/colors/font_focus_color = Color(0, 0, 0, 1)
+Function_button/colors/font_hover_color = Color(0, 0, 0, 1)
+Function_button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Function_button/colors/font_outline_color = Color(0, 0, 0, 1)
+Function_button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_disabled_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_focus_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_hover_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Function_button/colors/icon_pressed_color = Color(0, 0, 0, 1)
+Function_button/constants/align_to_largest_stylebox = 0
+Function_button/constants/h_separation = 0
+Function_button/constants/icon_max_width = 0
+Function_button/constants/outline_size = 0
+Function_button/font_sizes/font_size = 40
+Function_button/styles/disabled = SubResource("StyleBoxFlat_qq2lr")
+Function_button/styles/focus = SubResource("StyleBoxFlat_qq2lr")
+Function_button/styles/hover = SubResource("StyleBoxFlat_kuxg5")
+Function_button/styles/normal = SubResource("StyleBoxEmpty_anqyr")
+Function_button/styles/pressed = SubResource("StyleBoxFlat_qq2lr")
+GridContainer/constants/h_separation = 0
+GridContainer/constants/v_separation = 0
+Label/colors/font_color = Color(0.00095760945, 0.33505586, 0.48215562, 1)
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("1_pasw8")
+LineEdit/colors/font_color = Color(3.4894794e-07, 0.1829108, 0.15712103, 1)
+LineEdit/colors/font_placeholder_color = Color(0, 0.1971013, 0.1656009, 1)
+LineEdit/colors/selection_color = Color(0, 0.92843604, 0.82908666, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_anqyr")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_right = 20
+Panel/styles/panel = SubResource("StyleBoxTexture_0uexp")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_ogb46")
+RichTextLabel/colors/default_color = Color(0, 0.26669163, 0.26669154, 1)
+RichTextLabel/font_sizes/normal_font_size = 21
+RichTextLabel/fonts/normal_font = ExtResource("1_pasw8")
