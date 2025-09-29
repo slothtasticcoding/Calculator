@@ -23,7 +23,3 @@ window/size/viewport_height=1280
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
-
-[rendering]
-
-renderer/rendering_method="mobile"
